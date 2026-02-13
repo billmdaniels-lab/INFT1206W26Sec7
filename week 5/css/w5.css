@@ -1,0 +1,48 @@
+body {
+    background-color: gray;
+}
+h1{
+    color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font: bold;
+    font-size: 70px;
+    margin: 200px;
+    padding: 50px;   
+}
+p ::first-line{
+    background-color: darkgrey;
+    color: darkred;
+}
+
+p.type1 {
+    color: lightsalmon;
+    background-color: green;
+    font-size: 30px;
+}
+
+p.type2 {
+    color: cadetblue;
+    background-color: black;
+    font-size: 30px;
+}
+
+h2.type1 {
+    color: red;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+header p {
+    color: red;
+    border-style: dashed;
+    background-color: black;
+    border-color: blue;
+}
+
+a:hover {
+    color: darkred;
+}
+
