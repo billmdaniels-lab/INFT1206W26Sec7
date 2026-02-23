@@ -11,3 +11,21 @@ html {
 body {
   font: 1.2em / 1.5 system-ui;
 }
+
+/*
+Box Style
+*/
+
+body{
+    padding: 28px;
+    width: 500px;
+    background-color: #efefef;
+    margin: 0, auto;
+}
+
+ul{
+    background-color: white;
+    border: 5px solid purple;
+    border-radius: 20px;
+    padding: 30px;
+}
