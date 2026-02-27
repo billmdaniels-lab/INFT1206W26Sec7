@@ -75,3 +75,28 @@ p, li{
 section h2 + p{
     text-indent: 2rem;
 }
+
+
+/*
+Link Style
+*/
+a{
+    color: #aa6666;
+    outline: none;
+}
+
+a:visited{
+    color: indianred;
+}
+
+a:hover, a:focus{
+    color: indianred;
+    text-decoration: none;
+}
+
+a[href*="http"]{
+    padding-right: 15px;
+    background: url("external-link-52.png") no-repeat right center;
+    background-size: 11px 11px;
+}
+
