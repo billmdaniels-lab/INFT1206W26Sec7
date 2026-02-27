@@ -29,3 +29,35 @@ ul{
     border-radius: 20px;
     padding: 30px;
 }
+
+/*
+Font Style
+*/
+h1{
+    color: darkslategray;
+    border-bottom: 10px dotted purple;
+    font-size: 2rem;
+}
+
+h2{
+    font: italic;
+    font-size: 1.5rem;
+}
+
+div{
+    color: darkslategray;
+    font-weight: bold;
+}
+
+/*
+Link Style
+*/
+a{
+    color: green;
+}
+
+a:hover,
+a:focus{
+    color: darkgreen;
+    text-decoration: none;
+}
