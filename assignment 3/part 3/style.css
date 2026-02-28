@@ -67,3 +67,24 @@ nav{
     position: sticky;
     top: 0;
 }
+
+/*
+Picture Style
+*/
+
+.feature{
+    float: left;
+    margin: 10px 20px 20px 0;
+}
+
+.grid{
+    display:  grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.photos{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 2fr 2fr;
+}
