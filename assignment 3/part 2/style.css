@@ -100,3 +100,34 @@ a[href*="http"]{
     background-size: 11px 11px;
 }
 
+/*
+List Style
+*/
+
+ul, ol{
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    list-style-type: square;
+}
+
+/*
+Navigation Menu Style
+*/
+
+nav li{
+        list-style-type: none;
+}
+
+nav li a{
+    font-family: Bevan, serif;
+    text-decoration: none;
+    border: 3px solid #aa6666;
+    display: inline-block;
+    line-height: 3.5;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
