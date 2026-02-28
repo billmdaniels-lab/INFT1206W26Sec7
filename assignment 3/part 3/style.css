@@ -53,3 +53,17 @@ nav a {
 .feature {
   width: 200px;
 }
+
+/*
+Navigation Menu Style
+*/
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+}
