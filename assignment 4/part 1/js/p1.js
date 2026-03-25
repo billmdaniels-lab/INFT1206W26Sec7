@@ -1,3 +1,9 @@
+/* Name: Bill Daniels
+File: Assignment #4 Part 1
+Date: 13-02-2026
+Description: Silly story generator
+*/
+
 // Complete variable definitions and random functions
 
 const customName = document.getElementById("custom-name");
