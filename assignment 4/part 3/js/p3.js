@@ -42,7 +42,7 @@ class Ball {
     ctx.fill();
   }
 
-    update() {
+  update() {
     if (this.x + this.size >= width) {
       this.velX = -this.velX;
     }
@@ -63,7 +63,7 @@ class Ball {
     this.y += this.velY;
   }
 
-    collisionDetect() {
+  collisionDetect() {
     for (const ball of balls) {
       if (this !== ball) {
         const dx = this.x - ball.x;
