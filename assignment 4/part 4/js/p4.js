@@ -7,6 +7,9 @@ Description: Adding Features to Bouncing Balls
 
 // setup canvas
 
+const para = document.querySelector('p');
+let count = 0;
+
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -36,12 +39,11 @@ class Shape {
 
 class Ball extends Shape {
   constructor(x, y, velX, velY, color, size) {
-    this.x = x;
-    this.y = y;
-    this.velX = velX;
-    this.velY = velY;
+    super(x, y, velX, velY);
+
     this.color = color;
     this.size = size;
+    this.exists = true;
   }
 
   draw() {
@@ -89,7 +91,7 @@ class Ball extends Shape {
 
 class EvilCircle extends Shape {
   constructor(x, y) {
-    super(x, y, 0, 20);
+    super(x, y, 20, 20);
     this.color = "white";
     this.size = 10;
 
@@ -167,6 +169,8 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  count++;
+  para.textContent = 'Ball Count' + count;
 }
 
 const evilBall = new EvilCircle(random(0, width), random(0, height))
