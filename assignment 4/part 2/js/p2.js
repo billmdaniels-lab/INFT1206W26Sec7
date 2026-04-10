@@ -23,6 +23,11 @@ const baseurl = [
     "https://mdn.github.io/shared-assets/images/examples/learn/gallery/"
 ];
 
+function updateDisplayedImage(e) {
+    displayedImage.src = e.target.src;
+    displayedImage.alt = e.target.alt;
+}
+
 for (const image of images) {
     const newImage = document.createElement("img");
     newImage.src = `${baseurl}${image.filename}`;
@@ -33,10 +38,7 @@ for (const image of images) {
 
 }
 
-function updateDisplayedImage(e) {
-    displayedImage.src = e.target.src;
-    displayedImage.alt = e.target.alt;
-}
+
 
 btn.addEventListener("click",() =>{
     if (btn.classList.contains("dark")){
