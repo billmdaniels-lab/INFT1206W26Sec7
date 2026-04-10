@@ -176,12 +176,15 @@ while (balls.length < 25) {
 const evilBall = new EvilCircle(random(0, width), random(0, height))
 
 function loop() {
-  ctx.fillStyle = "rgb(0 0 0 / 25%)";
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
-    ball.draw();
-    ball.update();
+    if (ball.exists) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    }
   }
 
   evilBall.draw();
@@ -190,5 +193,6 @@ function loop() {
 
   requestAnimationFrame(loop);
 }
+
 
 loop();
