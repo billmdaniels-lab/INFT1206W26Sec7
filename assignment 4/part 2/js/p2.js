@@ -12,11 +12,11 @@ const overlay = document.querySelector(".overlay");
 
 
 const images = [
-    {filename: "pic1.jpg", alt: "Closeup of a human eye."},
-    {filename: "pic2.jpg", alt: "Rock that looks like a wave."},
-    {filename: "pic3.jpg", alt: "Purple and white pansies."},
-    {filename: "pic4.jpg", alt: "Section of a wall from a pharaoh's tomb."},
-    {filename: "pic5.jpg", alt: "Large moth on a leaf."}
+    { filename: "pic1.jpg", alt: "Closeup of a human eye." },
+    { filename: "pic2.jpg", alt: "Rock that looks like a wave." },
+    { filename: "pic3.jpg", alt: "Purple and white pansies." },
+    { filename: "pic4.jpg", alt: "Section of a wall from a pharaoh's tomb." },
+    { filename: "pic5.jpg", alt: "Large moth on a leaf." }
 ];
 
 const baseurl = [
@@ -35,17 +35,22 @@ for (const image of images) {
     newImage.tabIndex = "0";
     thumbBar.appendChild(newImage);
     newImage.addEventListener("click", updateDisplayedImage);
+    newImage.addEventListener("keydown", (e) => {
+        if (e.code === "Enter") {
+            updateDisplayedImage(e);
+        }
+    });
 
 }
 
 
 
-btn.addEventListener("click",() =>{
-    if (btn.classList.contains("dark")){
+btn.addEventListener("click", () => {
+    if (btn.classList.contains("dark")) {
         btn.textContent = "Lighten";
         overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
 
-    } else{
+    } else {
         btn.textContent = "Darken"
         overlay.style.backgroundColor = "rgb(0 0 0 / 0";
     }
