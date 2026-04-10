@@ -62,18 +62,8 @@ class Ball {
     this.x += this.velX;
     this.y += this.velY;
   }
-}
 
-const testBall = new Ball(50, 100, 4, 4, "blue", 10);
-
-testBall.x;
-testBall.size;
-testBall.color;
-testBall.draw();
-
-class Ball {
-  // …
-  collisionDetect() {
+    collisionDetect() {
     for (const ball of balls) {
       if (this !== ball) {
         const dx = this.x - ball.x;
