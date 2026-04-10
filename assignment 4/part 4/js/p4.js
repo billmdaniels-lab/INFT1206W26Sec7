@@ -1,7 +1,7 @@
 /* Name: Bill Daniels
-File: Assignment #4 Part 3
-Date: 09-04-2026
-Description: Bouncing Balls
+File: Assignment #4 Part 4
+Date: 10-04-2026
+Description: Adding Features to Bouncing Balls
 */
 
 
@@ -25,7 +25,16 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-class Ball {
+class Shape {
+  constructor(x, y, velX, velY, color, size) {
+    this.x = x;
+    this.y = y;
+    this.velX = velX;
+    this.velY = velY;
+  }
+}
+
+class Ball extends Shape{
   constructor(x, y, velX, velY, color, size) {
     this.x = x;
     this.y = y;
